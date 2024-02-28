@@ -2,12 +2,18 @@
 
 namespace Modules\Product\Tests;
 
-use PHPUnit\Framework\TestCase;
+use Illuminate\Foundation\Testing\RefreshDatabase;
+use Modules\Product\Models\Product;
+
+use Tests\TestCase;
 
 class ProductTest extends TestCase
 {
+    use RefreshDatabase;
     public function test_it_can_create_product()
     {
-        $this->assertTrue(true);
+        $product = Product::factory()->create();
+        dd($product);
+//        $this->assertTrue(true);
     }
 }

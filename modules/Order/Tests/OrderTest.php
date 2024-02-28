@@ -2,7 +2,7 @@
 
 namespace Modules\Order\Tests;
 
-use PHPUnit\Framework\TestCase;
+use Tests\TestCase;
 
 class OrderTest extends TestCase
 {
